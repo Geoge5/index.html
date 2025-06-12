@@ -53,13 +53,14 @@
 }
 
 img{
-  size: 20%;
-  width: 60%;
+  size: 12%;
+  width: 444px;
   border-top: 5px solid;
   border-color: #545454;
   transition: transform 1s; 
 }
 img:hover{
+  transition: 50;
   width:61%;
   
 }
@@ -74,14 +75,15 @@ img:hover{
 }
 
 
-.hr{
-   border: none; /* Zruší defaultní styl */
-    border-top: 2px solid #ccc; /* Tenká šedá čára */
+hr{
+   border: 5px solid; /* Zruší defaultní styl */
+     /* Tenká šedá čára */
     margin: 20px 0; /* Vzdálenost kolem čáry */
     width: 90%; /* Délka čáry */
     box-shadow: none; /* Jemný stín pod čárou */
     margin-left: auto; /* Vycentrování */
     margin-right: auto; /* Vycentrování */
+  border-color: #545454
 }
 .dolnitext{margin-bottom: 50px;}
 
@@ -96,10 +98,21 @@ img:hover{
         transition: background-color 0.3s; /* Přidáno pro plynulou změnu barvy */
       }
 .text{
-  font: bolder 15px/1.5 Aria;
+  font: bolder 15px/1.5 italic;
   font-size: 120%;
   
 }
+
+table {
+  border-collapse: collapse;
+}
+
+th, td {
+  border-top: 4px solid #545454;
+  padding: 12px;
+}
+
+
       .stylul {
         background-color: #9eccbd;
         border-color: #545454;
@@ -115,6 +128,8 @@ img:hover{
         font-weight: bold;
         text-decoration: none;
       }
+
+tr 
 
       ul li:hover {
         margin: 5px;
