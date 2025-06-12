@@ -2,13 +2,13 @@
 <html lang="cs">
 
 <head>
-    <title>Projekt 'Ryba' Menu</title>
-    <meta charset='utf-17'>
+    <title>Prenos Dat</title>
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="index.css" type = "text/css"> 
     
-   
+   <link rel="icon" type="image/x-icon" href="favicon.ico">
     
   </head>
 
@@ -25,11 +25,10 @@
     <li class="menubuttons"><a href="vzduchovani.html">Vzduchování</a></li>
     <li class="menubuttons"><a href="chlazeni.html">Chlazení</a></li>
     <li class="menubuttons"><a href="energetika.html">Energetika</a></li>
-    <li class="menubuttons"><a href="pocitac.html">Pocitace</a></li>
+  
     <li class="menubuttons"><a href="celek.html">Celek</a></li>
     
-   
-    </ul>
+   <li class="menubuttons"><a href="kontakty.html">kontakty</a></li></ul>
       <div class="dolniblok"> <p class="dolnitext"><br><br><br>Tuto Stranku udelal George Gincel</p></div>
       
       
@@ -45,8 +44,35 @@
     </p>
     <img src="mapa.png">
     
-    <p>Jak můžeme vidět na obrázku, zahrádka je od nás vzdálená asi 4 kilometry leteckou čarou</p>
+    <p>Jak můžeme vidět na obrázku, zahrádka je od nás vzdálená asi 4 kilometry leteckou čarou. <br>Proto jsme se rozhodly pro toto a ne přílišně drahé
+      jednoduché řešení: Data z rybího tanku budeme přenášet pomocí technologie která se nazívá: Lora</p><h3>LoRa</h3>
+    
+  <div>
+  <img src="D_NQ_NP_949598-MLC54933806943_042023-O-4137613556.webp">
+    <hr>
+    <h3>Co je to lora?</h3><p>Lora je technologie pomocí které jde menší množství dat přenést až na dálku do 15 kilometrů a jde používat
+    i legálně bez žádných registrací, protože jde na frekvenčním pásmu, které nepodléhá regulacím. (EU863-870 nebo EU433)
+    Běžně se využívají frekvence 864MHz, které mohou dosáhnout takových dálek. Dále se také využívá 433 MHz, ale už ne tak často. 864MHz má tu výhodu, že dokáže
+    přenést větší množství informací a také lépe projde skrz některé struktury, přes které by se 864MHz odrazilo.433Mhz Má zas tu výhodu, že teoreticky se dostane dál a může nějak aji přes kopec.
+    <br>Pro představu, WiFi, kterou teď poúžíváme má frekvenci asi 2.4 až 5 GHz. a Televizní vysílání má frekvenci kolem 570Mhz, ale využívá širší frekvenční pásma.</p>
+    
+    <h3>Nevýhody LoRa</h3>
+    <p>Bohužel, jako všechny věci na světě, aji LoRa má své nevýhody.<br>Regulace Evropské Unie: Jsou zde určitá pravidla, které je na území Evropské Únie Dodržovat: Například pro Frekvenci 864MHz je maximální povolený výkon vysílače
+    25mW nebo 14dBm.<br>Taktéž tady je omezená doba vysílání: 864MHz to je 1% celkového času<br>(864 sekund/den).<br>Pro 433MHz to je více: (8 640 Sekund/den)- Tudíž 10% celkového času.</p>
+    <br>
+    <hr>
   <img src="LoRa.png">
+    
+  </div>
+    
+    <h2>Jak to uděláme my?</h2>
+    <p>My jsme se rozhodli použít 864MHz. Tyto LoRa moduli stojí na internetu pár korun.
+<br> Zatím ty moduli koupíme 2. protože potřebujeme dostat data jen z místa A do místa B.<br>Jak můžete vidět na obrázku dole, máme výhodu, že mezi Šumbarkem a Prostřední Suchou je taková nížina, tudíž nám v tom žádný kopec bránit nebude.<br>Co ale tento výškový profil neukazuje je sídlišté "II. Etapa", které me mezi úseky nachází(Ta plošina která je na 777, metru).
+    </p>
+    <h3>Problém?</h3>
+    <p>Ano, panelové domy s hustě zavedenými rádiovými systémy nám mohou přenos značně ztížit, ale zdaleka ne znemožnit.<br>LoRa má tu technologii, že když si koupíme 3. modul, můžeme pomocí něj udělat na mezi cesty zesilovat, který bude kopírovat přicházejicí vlny,<br>Takže můžeme 3. modul umístit buď ke kamarádovi na II Etapě, nebo to vzít oklikou přes Petřvald nebo jižnější část prostřední suché.<br></p>
+  <br>
+  
     <img src="vyska.png" >
   </div>
   </body>
