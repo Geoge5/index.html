@@ -2,13 +2,13 @@
 <html lang="cs">
 
 <head>
-    <title>Projekt 'Ryba' Menu</title>
-    <meta charset='utf-17'>
+    <title>Energetika a Počítače</title>
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="index.css" type = "text/css"> 
     
-   
+   <link rel="icon" type="image/x-icon" href="favicon.ico">
     
   </head>
 
@@ -26,14 +26,40 @@
     <li class="menubuttons"><a href="chlazeni.html">Chlazení</a></li>
     <li class="menubuttons"><a href="energetika.html">Energetika</a></li>
     <li class="menubuttons"><a href="celek.html">Celek</a></li>
-    
-    <li class="menubuttons"><a href="#">kontakty</a></li>
+    <li class="menubuttons"><a href="kontakty.html">kontakty</a></li>
     </ul>
       <div class="dolniblok"> <p class="dolnitext"><br><br><br>Tuto Stranku udelal George Gincel</p></div>
       
       
        
       </div>
+  
+  
+  <div class="zbytek">
+  <h1>Energetika a Řídicí Elektronika</h1>
+
+  <h2>Napájení celého systému</h2>
+  <p>Celý náš rybí ekosystém bude napájen čistě z obnovitelných zdrojů. Použijeme **20W solární panel** s výstupem 12V, který bude přes den dobíjet **12V olověnou baterii**. Tato baterie bude napojena přes **solární regulátor nabíjení s LCD displejem** (typ: <i>12V/24V, 30A, 2x USB</i>). Ten zajišťuje nejen stabilní napětí, ale zároveň chrání systém proti přebití, podbití a zkratu. Tím pádem máme řešenou jak bezpečnost, tak i efektivitu.</p>
+<a target="_blank" href="https://allegro.cz/produkt/regulator-nabijeni-blow-40a-4506a99d-c689-445d-944d-9c317750aece?offerId=15014748128">
+  <img src="regulator.png" alt="regulator na Allegro">
+</a>
+    <hr>
+  <h2>Výkon a spotřeba</h2>
+  <p>Celková plánovaná spotřeba systému (LoRa, filtrace, vzduchování, základní mikrokontroler) nepřesáhne **12W**, což dává dostatečnou rezervu. I kdyby se během dne nenabilo úplně ideálně, baterie s kapacitou cca **7Ah** vydrží udržet systém v chodu i **několik hodin přes noc**.</p>
+<hr>
+  <h2>Řídicí jednotka</h2>
+  <p>Jako mozek systému zatím zvažujeme buď klasické Arduino UNO, nebo modernější ESP32. ESP32 má výhodu v nízké spotřebě a zabudované Wi-Fi/Bluetooth konektivitě, což by umožnilo bezdrátový monitoring nebo ovládání přes telefon. Pokud bude třeba připojit více analogových senzorů, může Arduino vyhrát kvůli větší stabilitě a kompatibilitě.</p>
+<hr>
+  <h2>Bezpečnost a pojistky</h2>
+  <p>Každý větší prvek (čerpadlo, ESP32, regulátor) bude mít vlastní pojistku 3A– to je dostatečné pro provoz, ale zároveň chrání před přetížením nebo požárem. Celé vedení bude ve vedené v plastových žlabech, napájení bude oddělené od datových kabelů kvůli rušení.</p>
+<hr>
+  <h2>Efektivita a budoucí rozšíření</h2>
+  <p>Do budoucna je možné systém rozšířit o **senzor teploty vody, napětí baterie, nebo třeba **plovákový spínač**, který detekuje hladinu vody. Vše může být odesíláno přes **LoRa modul** do domácí základny, případně přes ESP32 rovnou do cloudu. Pro případ výpadku slunce se uvažuje o **mini DC měniči s USB-C vstupem** pro dobití baterie z powerbanky.</p>
+<hr>
+  <h2>Závěr</h2>
+  <p>Navržený systém je **levný, soběstačný a snadno opravitelný**. Nepotřebuje přívod ze sítě, je přenositelný, a zároveň se dá vyladit na míru podle aktuálních potřeb akvária nebo experimentu. Navíc celý systém učí práci s mikrokontroléry, napájením a přemýšlení v souvislostech.</p>
+</div>
+
   </body>
 </html>
 
